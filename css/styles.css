@@ -451,3 +451,127 @@ button {
 .hero-title {
   margin-bottom: 48px;
 }
+
+/* features-section */
+
+.features-section {
+  margin: 0 auto;
+  width: 320px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.container-features-section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.features {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.features-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+.container-subtitle-icon {
+  display: none;
+}
+
+.features-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.features-item-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+  .features-section {
+    width: 768px;
+  }
+}
+
+.features-list {
+  gap: 72px 24px;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 2);
+  padding-right: 0;
+  width: 356px;
+}
+
+.features-subtitle {
+  text-align: start;
+}
+
+@media screen and (min-width: 1158px) {
+  .features-section {
+    width: 1158px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container-features-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .features-list {
+    justify-content: flex-start;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .container-subtitle-icon {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    background-color: #f4f4fd;
+    border-color: #8e8f99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subtitle-icon {
+    fill: #2e2f42;
+  }
+
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .features-item-text {
+    font-weight: 400;
+  }

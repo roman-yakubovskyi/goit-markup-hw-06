@@ -24,11 +24,6 @@
   background-color: #404bbf;
 }
 
-.features-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .container-subtitle-icon {
   height: 112px;
   background-color: #f4f4fd;
@@ -46,12 +41,6 @@
 .subtitle-icon {
   background-color: #f4f4fd;
   width: calc((100% - 3 * 24px) / 4);
-}
-
-.features-list {
-  display: flex;
-  align-items: center;
-  gap: 24px;
 }
 
 .features-item {
