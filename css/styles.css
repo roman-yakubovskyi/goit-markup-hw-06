@@ -698,3 +698,129 @@ button {
     gap: 24px;
   }
 }
+
+/* our-portfolio */
+
+.our-portfolio {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  margin: 0 auto;
+  width: 320px;
+  background-color: #ffffff;
+}
+
+.portfolio-container {
+  border-top: none;
+  width: auto;
+}
+
+.our-portfolio-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.our-portfolio-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.paragraph {
+  display: none;
+}
+
+.our-portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.our-portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.our-portfolio-container {
+  border-top: none;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-portfolio {
+    width: 768px;
+  }
+
+  .our-portfolio-item {
+    width: calc((100% - 72px) / 2);
+  }
+
+  .our-portfolio-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .our-portfolio {
+    width: 1158px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .our-portfolio-list {
+    width: 1128px;
+  }
+
+  .our-portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .portfolio-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background: #4d5ae5;
+    padding: 40px 32px;
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .our-portfolio-item:hover .paragraph {
+    transform: translateY(0%);
+  }
+
+  .our-portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+}
