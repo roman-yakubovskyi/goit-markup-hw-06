@@ -53,7 +53,7 @@ button {
 
 .container {
   max-width: 320px;
-  padding: 0 16 px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -82,6 +82,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.nav-list,
+.contacts-list {
+  display: none;
 }
 
 .logo {
@@ -364,8 +369,6 @@ button {
   color: #fff;
   margin: 0 auto;
   max-width: 216px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 72px;
 }
 
@@ -416,13 +419,12 @@ button {
         url(../images/hero-img/people-office-tablet-2x.jpg);
     }
   }
-}
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  margin-bottom: 36px;
-  max-width: 496px;
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    max-width: 496px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -446,10 +448,9 @@ button {
         url(../images/hero-img/people-office-screen-2x.jpg);
     }
   }
-}
-
-.hero-title {
-  margin-bottom: 48px;
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }
 
 /* features-section */
