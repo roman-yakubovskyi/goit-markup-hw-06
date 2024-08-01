@@ -192,6 +192,7 @@ button {
   .nav-link.current {
     color: #404bbf;
   }
+
   .current::after {
     content: '';
     position: absolute;
@@ -226,6 +227,7 @@ button {
   .nav-link:focus,
   .contacts-link:focus {
     color: #404bbf;
+  }
 }
 
 /*mobile menu*/
@@ -267,7 +269,7 @@ button {
 }
 
 .mobile-menu-close {
-   position: absolute;
+  position: absolute;
   top: 24px;
   right: 24px;
   background-color: transparent;
