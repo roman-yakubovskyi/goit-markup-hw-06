@@ -1364,6 +1364,17 @@ button {
   .modal {
     width: 408px;
     min-height: 584px;
+    top: 96px;
     padding: 72px 24px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form-btn:focus {
+    background-color: #404bbf;
   }
 }
