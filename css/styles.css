@@ -589,14 +589,7 @@ button {
 
 .our-team {
   background-color: #f4f4fd;
-  color: #f4f4fd;
-  width: 320px;
-  margin: 0 auto;
-  padding: 96 28;
-}
-
-.container-our-team {
-  align-items: center;
+  color: #2e2f42;
 }
 
 .our-team-title {
@@ -606,63 +599,54 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-transform: capitalize;
   margin-bottom: 72px;
 }
 
 .our-team-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 72px;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 72px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .our-team-item {
   background-color: #ffffff;
-  width: 264px;
-  height: 428px;
-  gap: 72px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  padding: 0px 0px 32px 0px;
-}
-
-.our-team-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
-.our-team-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #434455;
-  font-weight: 400;
-  margin-bottom: 8px;
 }
 
 .our-team-container {
   padding: 32px 0;
 }
 
+.our-team-subtitle {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.our-team-text {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+
 .our-team-soc-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  flex-shrink: 0;
-  align-self: flex-end;
-}
-
-.our-team-soc-item {
-  width: 40px;
-  height: 40px;
 }
 
 .our-team-soc-link {
@@ -676,8 +660,12 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-soc-link:hover,
-.our-team-soc-link:focus {
+.our-team-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.our-team-soc-link:hover {
   background-color: #404bbf;
 }
 
@@ -686,24 +674,26 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .our-team {
-    width: 768px;
-  }
-
   .our-team-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 64px 24px;
+    justify-items: center;
+    padding-left: 92px;
+    padding-right: 92px;
   }
 }
 
 @media screen and (min-width: 1158px) {
-  .our-team {
-    width: 1158px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
   .our-team-list {
+    display: flex;
+    flex-direction: row;
     gap: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .our-team-soc-item:focus {
+    background-color: #404bbf;
   }
 }
 
